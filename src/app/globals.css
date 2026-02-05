@@ -1,7 +1,20 @@
 @import "tailwindcss";
 
-@theme {
-  --primary-color: #ff0705;
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: 1280px;  /* límite fijo */
+    margin-left: auto;  /* centrado */
+    margin-right: auto;
+    padding-left: 1rem; /* padding lateral */
+    padding-right: 1rem;
+  }
+}
+
+@theme inline {
+  --color-primary: #ff0705;
+  --color-primary-hover: #d90604;
+  --color-primary-active: #b30503;
 }
 
 /* :root {
